@@ -41,7 +41,16 @@ h1{ font-size:1.3rem; }
 100%{ transform:scale(1.3) translateY(-80px); } 
 } 
 
-h1{ font-family:'Cinzel', serif; color:#2346a4; text-shadow:0 0 12px rgba(35,70,164,0.6); letter-spacing:3px; } 
+/* عنوان أسود لامع */
+h1{
+    font-family:'Cinzel', serif; 
+    color: #000; /* أسود */
+    text-shadow: 
+        0 0 5px #555, 
+        0 0 10px #777, 
+        0 0 15px #fff; /* لمعان */
+    letter-spacing:3px; 
+} 
 
 .separator{ width:60%; height:2px; background:linear-gradient(90deg, transparent, #111, #000, #111, transparent); margin:30px auto; box-shadow:0 0 12px rgba(0,0,0,0.7); } 
 
@@ -113,13 +122,19 @@ footer{ position:fixed; bottom:10px; width:100%; text-align:center; font-size:12
 <h1>Multikult Piercing & Tattoo</h1> 
 <div class="separator"></div> 
 
+<!-- Buttons -->
 <button class="button" onclick="showContent('start')">Startseite</button> 
 <button class="button" onclick="showContent('kontakt')">Kontakt</button> 
 <button class="button" onclick="showContent('standort')">Standort</button> 
 <button class="button" onclick="showContent('studio')">Unser Studio</button> 
 <button class="button" onclick="showContent('leistungen')">Unsere Leistungen</button>
 <button class="button" onclick="showContent('team')">Team</button>
+<button class="button" onclick="showContent('agb')">AGB</button>
+<button class="button" onclick="showContent('datenschutz')">Datenschutzerklärung</button>
+<button class="button" onclick="showContent('downloads')">Downloads</button>
+<button class="button" onclick="showContent('cookies')">Cookie Deklaration</button>
 
+<!-- Sections -->
 <section id="start"> 
 <h2>Willkommen bei Multikult Piercing & Tattoo</h2> 
 <p> Professionelle Piercings, Tattoos und Schmuck mit Erfahrung seit 2005. </p> 
@@ -142,13 +157,13 @@ footer{ position:fixed; bottom:10px; width:100%; text-align:center; font-size:12
 <p>Hofstatt 16 · 94315 Straubing</p> 
 <div style="margin-top:25px"> 
 <a class="button" href="https://www.google.com/maps/search/?api=1&query=Hofstatt+16+94315+Straubing" target="_blank"> Google Maps </a> 
-<a class="button" href="http://maps.apple.com/?q=Hofstatt+16+94315+Straubing" target="_blank"> Apple Karten </a> 
+<a class="button" href="http://maps.apple.com/?q=Hofstatt+16+94315+Straubing" target="_blank"> Apple Karten </a>
 </div> 
 </section> 
 
 <section id="studio"> 
 <h2>Unser Studio</h2> 
-<p>JALALTest hier tauschschen</p> 
+<img src="https://image2url.com/r2/default/images/1773175265547-3f279dde-3374-4fe3-9225-3036cdad875c.png" alt="Unser Studio Bild">
 </section>
 
 <section id="leistungen">
@@ -158,18 +173,51 @@ footer{ position:fixed; bottom:10px; width:100%; text-align:center; font-size:12
 
 <section id="team">
 <h2>Team</h2>
-
 <p>
 <b>Alex – Inhaber | Piercer & Tätowierer</b><br>
 Seit 1999 arbeitet Alex als medizinisch ausgebildeter Piercer und bringt mit viel Erfahrung und Leidenschaft einzigartige Piercings unter die Haut seiner Kunden. Seit 2009 ist er außerdem als Tätowierer kreativ tätig.
 </p>
-
 <br>
-
 <p>
 <b>Dani – Piercerin</b><br>
 Dani hat ihre Ausbildung direkt bei Alex absolviert und ist seit mehreren Jahren als professionelle Piercerin im Studio tätig. Mit Ruhe, Präzision und viel Leidenschaft sorgt sie dafür, dass ihr euch beim Piercen rundum wohlfühlt.
 </p>
+</section>
+
+<section id="agb">
+<h2>AGB</h2>
+<p>Die Allgemeinen Geschäftsbedingungen</p>
+<p>Personen unter 18 Jahren werden nur mit einer schriftlichen Bestätigung eines Erziehungsberechtigten behandelt. Eine schriftliche Einverständniserklärung der Erziehungsberechtigten wird nur in Verbindung mit einer Kopie deren gültigen Personalausweises akzeptiert, oder nach telefonischer Bestätigung eines Elternteiles.</p>
+<p>Personen, die offensichtlich unter Alkohol- oder Drogeneinfluss stehen, werden nicht behandelt.</p>
+<p>Die Nachbehandlung liegt allein in der Verantwortung des Kunden. Bei Nichteinhaltung oder mangelhafter Durchführung der Nachbehandlungsempfehlungen besteht die Möglichkeit der Beschädigung des Gewebes.</p>
+<p>Gemäß den gesetzlichen Bestimmungen wird bei mir ausschließlich steriles bzw. Einwegmaterial verwendet.</p>
+<h3>Impressum</h3>
+<p>
+Hähnel Alexander<br>
+Hofstatt 16<br>
+94315 Straubing<br>
+Alex Mobil: 0175/400 47 17<br>
+Dany Mobil: 0160/933 21 698<br>
+E-Mail: <a href="mailto:heimpiercing@web.de">heimpiercing@web.de</a><br>
+Finanzamt Straubing<br>
+Umsatzsteuer ID: DE 23 50 83 963
+</p>
+</section>
+
+<section id="datenschutz">
+<h2>Datenschutzerklärung</h2>
+<p>Sie können unsere Datenschutzerklärung als PDF herunterladen oder ansehen:</p>
+<a class="button" href="https://image2url.com/r2/default/documents/1773173644540-4d1a2fca-906f-45a1-a17c-f3f65747a6fa.pdf" target="_blank" download>📄 PDF herunterladen</a>
+</section>
+
+<section id="downloads">
+<h2>Downloads</h2>
+<p>Hier können Sie wichtige Dokumente oder Dateien zum Download bereitstellen.</p>
+</section>
+
+<section id="cookies">
+<h2>Cookie Deklaration</h2>
+<p>Unsere Website verwendet Cookies nur, wenn notwendig für die Funktion der Seite. Eine aktive Zustimmung wird eingeholt, falls weitere Tracking-Cookies genutzt werden.</p>
 </section>
 
 <footer> © 2026 Jalal.H </footer> 
